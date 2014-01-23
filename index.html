@@ -1,0 +1,50 @@
+﻿
+<HTML>
+<META Name="description" Content="AIX Undelete files. AIX jfs2 file recovery.">
+<META Name="keywords" Content=" aix, jfs2, recovery utility, unremoving files, undelete, j2recover, restore, j2restore, data recovery">
+<HEAD>
+<TITLE>j2recover - The AIX jfs2 data recovery tool</TITLE>
+<link rel="stylesheet" type="text/css" href="/css/web.css" />
+</HEAD>
+
+
+<body>
+<div id="page">
+				<div id="content">
+<h1>AIX JFS2 Data Recovery Tool:  j2recover</h1>
+<hr>
+<p>j2recover is the most powerful tool for jfs2 data recovery in AIX, 
+which can be used for mounted or unmounted jfs2 file systems.
+</p>
+
+<p>
+When j2recover is used for unmounted file system,
+it will try best to recover inodes in their original location without copy,<br>
+thus greatly improved the performance since it minimized the IO activity,
+and also greatly saved disk space for restore.
+</p>
+
+<p>
+Sometimes some file systems of production system can not be unmounted when files are wrongly deleted.<br>
+In such case j2recover can be used for mounted file system,
+and it will copy restored files to specified location.
+</p>
+
+<p>
+Sometimes deleted files maybe has been overwritten by other files.
+But some files(such as text file) might still valuable even it has been partially overwritten.<br>
+j2recover can also restore deleted files even they are partially or totally overwritten.
+And j2recover will report what blocks are overwritten in the file.<br>
+Thus user can check the file content and get those valuable data without overwriting.
+</p>
+
+<hr>
+</div>
+</div>
+		<div id="sectionnav">
+				Download: <a href="/j2recoverlist"><font color="#E21B1B"><b>j2recoverlist</b>	</font></a>
+				<br>
+	  <b>Email: j2recover@163.com</b>		
+	  <br>
+  	</div>
+</body>
